@@ -27,7 +27,8 @@ const port = argv.port || 3000;
 // })
 fs.readFile('./public/index.html', 'utf8', (err,data) => {
     if (err) {
-        throw err;
+        console.log(err);
+        return
     }
     else{
         const server = http.createServer((req,res) => {
