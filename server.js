@@ -37,7 +37,7 @@ fs.readFile('./public/index.html', (err,data) => {
             res.end(data)
             
         }).listen(argv.port || 3000, () => {
-            console.log(`Server started at ${argv.port || 3000}`);
+            console.log(`Server listening on port ${argv.port || 3000}`);
            });
         // const server = http.createServer((req,res) => {
         //     res.statusCode(200)
